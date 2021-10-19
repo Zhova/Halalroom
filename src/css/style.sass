@@ -1,10 +1,12 @@
+@import ./variables
+
 body
 	max-width: 100%
 	overflow-x: hidden
 
 *, *:after, *:before
 	box-sizing: border-box
-	font-family: 'Montserrat', sans-serif
+	// font-family: 'Montserrat', sans-serif
 	padding: 0
 	margin: 0
 	text-decoration: none
@@ -12,6 +14,46 @@ body
 	max-width: 100%
 	font-weight: 300
 	outline: none
+
+.slick
+	&-slider
+		*
+			max-width: none
+	&-arrow
+		border: 0
+		font-size: 0
+		background: transparent
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 10px
+		height: 10px
+		z-index: 1
+		cursor: pointer
+	&-dots
+		position: absolute
+		bottom: 80px
+		left: 50%
+		transform: translateX(-50%)
+		display: flex
+		li
+			font-size: 0
+			border: 1px solid #F1F1F1
+			border-radius: 50%
+			width: 20px
+			height: 20px
+			margin-right: 24px
+			list-style: none
+			cursor: pointer
+			&:last-child
+				margin-right: 0
+			button
+				background: none
+				font-size: 0
+				color: transparent
+				border: 0
+	&-active
+		background: #F1F1F1
 
 ul
 	li
@@ -27,3 +69,16 @@ ul
 .container
 	width: 95%
 	max-width: 1370px
+
+.btn
+	&_default
+		border-radius: 10px
+		padding: 12px 40px
+		display: inline-block
+	&_red
+		background: $red-color
+		color: #EBEBEB
+		font-weight: normal
+		font-size: 24px
+		line-height: 28px
+		text-align: center

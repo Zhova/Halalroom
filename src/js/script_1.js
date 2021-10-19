@@ -1,3 +1,7 @@
 $(document).ready(function () {
-  console.log("document ready");
+  $(".main-slider").slick({
+    slideToShow: 1,
+    slideToScroll: 1,
+    dots: true,
+  });
 });

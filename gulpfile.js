@@ -17,6 +17,7 @@ const cssFiles = [
   "./src/css/variables.sass",
   "./src/css/style.sass",
   "./src/css/header.sass",
+  "./src/css/main_screen.sass",
   "./src/css/media.sass",
 ];
 
