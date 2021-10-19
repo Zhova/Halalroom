@@ -19,6 +19,7 @@ const cssFiles = [
   "./src/css/header.sass",
   "./src/css/main_screen.sass",
   "./src/css/lastNews_screen.sass",
+  "./src/css/podcasts_screen.sass",
   "./src/css/media.sass",
 ];
 
