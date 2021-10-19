@@ -1,0 +1,36 @@
+@import ./variables
+
+.lastNews
+    padding-top: 60px
+    padding-bottom: 100px
+    .title
+        margin-bottom: 80px
+    &-list
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 80px
+        &__item
+            margin-right: 30px
+            max-width: 23%
+            border-radius: 10px
+            overflow: hidden
+            &:last-child
+                margin-right: 0
+        &__img
+            margin-bottom: $size-m
+        &__note-block
+            display: flex
+            justify-content: space-between
+            color: $lightGray-collor
+            margin-bottom: $size-m
+        &__title
+            color: $lightBlack-collor
+            font-size: $size-m
+            font-family: $font-montserrat
+            font-weight: bold
+            line-height: 140%
+            margin-bottom: 10px
+        &__desc
+            color: $gray-collor
+            font-size: $size-xxs
+            font-family: $font-inter
