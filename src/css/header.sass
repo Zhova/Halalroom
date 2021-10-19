@@ -1,0 +1,26 @@
+@import ./variables
+
+.header
+    height: 76px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-wrap
+        background: #fff
+    &-logo
+        display: flex
+        align-items: center
+        &__img
+            margin-right: 15px
+    span,p,a,li
+        font-size: $size-m
+        font-family: $font-montserrat
+        font-weight: 600
+
+.nav-menu
+    &__list
+        display: flex
+    &__item
+        margin-right: 40px
+        &:last-child
+            margin-right: 0
