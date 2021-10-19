@@ -21,4 +21,17 @@ $(document).ready(function () {
       },
     ],
   });
+  function layoutOfSlides() {
+    $(".podcasts .slick-slide").removeClass("origin-left");
+    $(".podcasts .slick-slide").removeClass("origin-right");
+    $(".podcasts .slick-center").next().addClass("origin-left");
+    $(".podcasts .slick-center").prev().addClass("origin-right");
+  }
+  layoutOfSlides();
+
+  $(".podcasts-slider").on("beforeChange", function () {
+    setTimeout(() => {
+      layoutOfSlides();
+    }, 0);
+  });
 });
