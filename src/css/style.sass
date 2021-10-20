@@ -111,3 +111,30 @@ ul
 		z-index: -1
 	&-right
 		transform-origin: 200%
+
+.news-list
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__item
+		max-width: 24%
+		border-radius: 10px
+		overflow: hidden
+	&__img
+		margin-bottom: $size-m
+	&__note-block
+		display: flex
+		justify-content: space-between
+		color: $lightGray-collor
+		margin-bottom: $size-m
+	&__title
+		color: $lightBlack-collor
+		font-size: $size-m
+		font-family: $font-montserrat
+		font-weight: bold
+		line-height: 140%
+		margin-bottom: 10px
+	&__desc
+		color: $gray-collor
+		font-size: $size-xxs
+		font-family: $font-inter
