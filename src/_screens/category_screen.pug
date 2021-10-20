@@ -1,10 +1,12 @@
 include ../_partials/news-item.pug
+include ../_partials/popular-menu.pug
 
 mixin category_screen 
     +b.SECTION.category-wrap.wrap
         +b.category.container
             +b.H2.title_default категорії
             +b.news-list 
+                +popular-menu
                 +news-item
                 +news-item
                 +news-item
@@ -16,5 +18,3 @@ mixin category_screen
                 +news-item
                 +news-item
                 +news-item
-
-             
