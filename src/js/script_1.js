@@ -34,4 +34,14 @@ $(document).ready(function () {
       layoutOfSlides();
     }, 0);
   });
+
+  $(".header .menu--2").click(() => {
+    if ($(".menu--2 input").is(":checked")) {
+      $(".header .nav-menu").fadeIn(500);
+      $(".header .burger-lang").addClass("open");
+    } else {
+      $(".header .nav-menu").fadeOut(500);
+      $(".header .burger-lang").removeClass("open");
+    }
+  });
 });

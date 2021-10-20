@@ -12,6 +12,14 @@ mixin header
                         a(href="#") Відео та подкасти
                     +e.LI.item 
                         a(href="#") Категорії
-            +b.UL.lang-block
-                +e.LI.item UA 
-    
+            +b.burger-lang
+                +b.UL.lang-block
+                    +e.LI.item UA 
+                .menu.cross.menu--2
+                    label
+                        input(type='checkbox')
+                        svg(viewbox='0 0 100 100' xmlns='http://www.w3.org/2000/svg')
+                            circle(cx='50' cy='50' r='30')
+                            path.line--1(d='M0 70l28-28c2-2 2-2 7-2h64')
+                            path.line--2(d='M0 50h99')
+                            path.line--3(d='M0 30l28 28c2 2 2 2 7 2h64')
