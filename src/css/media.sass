@@ -6,50 +6,77 @@
 // =============== tablet 
 @media screen and (max-width: 1199px)
     .container
-        max-width: 90%
+        max-width: 92%
 
     .title
         &_default
             font-size: 30px
+            font-family: $font-montserrat
 
     .btn
         &_transp
             font-size: $size-s
             line-height: 21px
             padding: 9px 33px
+    .slick-dots
+        li
+            width: 12px
+            height: 12px
+    .news-list
     .popular-menu
         max-width: none
     .header
+        height: 68px
         &-logo__text
             display: none
         .nav-menu
             display: none
 
     .main-slider
+        &__item
+            padding-top: 0
         &__text
             min-width: auto
             position: relative
             z-index: 1
-            padding: 64px 15px 150px
+            padding: 73px 20px 150px
             padding-bottom: 150px
             background: rgba(0, 0, 0, .3)
         &__desc,&__title-list,&__list-item
             font-size: $size-xs
+        &__desc
+            padding: 0 7px
+        &__title-list
+            margin-bottom: 0
+            padding-left: 6px
+        &__list-item
+            margin-bottom: 0
+            &::before
+                transform: translateY(0)
+                top: 8px
+                left: 15px
         &__img
-            max-width: 310px
-            height: 100%
+            max-width: 342px
+            height: 110%
             position: absolute
             left: auto
             right: 0
-            bottom: 0
+            bottom: -100px
             object-fit: cover
-            object-position: left
+            object-position: 8%
         .slick-arrow
             display: none !important
         .btn
             display: none
+        &::after
+            height: 6%
+        .slick-dots
+            bottom: 30px
+            li
+                width: 12px
+                height: 12px
     .news-list
-        margin-bottom: 50px
+        margin-bottom: 58px
         &__item
             max-width: 100%
             position: relative
@@ -76,12 +103,14 @@
             padding: 0 10px
             font-size: $size-xs
             color: #fff
-    .lastNews .title
-        margin-bottom: 48px
+    .lastNews
+        padding-top: 83px
+        .title
+            margin-bottom: 48px
     .podcasts
         padding: 50px 15px
         .title
-            margin-bottom: 34px
+            margin-bottom: 40px
         .slick-slide
             transform: scale(1)
             .podcasts-slider
@@ -107,9 +136,11 @@
                 text-align: left
             &__title
                 font-size: $size-m
-                margin-bottom: 16px
+                margin-bottom: 20px
+                text-transform: none
             &__desc
                 font-size: $size-xxs
+                line-height: 140%
                 color: #828282
             &__btns-block
                 width: 100%
@@ -135,6 +166,8 @@
             margin-bottom: 50px
 
     .footer
+        &-wrap
+            padding-top: 120px
         &__title
             text-align: center
         &__nav-list

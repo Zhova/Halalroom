@@ -5,6 +5,7 @@
     font-family: $font-roboto
     &__item
         position: relative
+        padding-top: 60px
     &__bg
         position: absolute
         width: 100%
@@ -14,13 +15,13 @@
     &__content
         position: relative
         display: flex
-        max-width: 1210px
+        max-width: 1155px
         &-wrap
             width: 100%
             display: flex
             justify-content: center
     &__text
-        padding-top: 110px
+        padding-top: 50px
         color: $lightWhite-color
         min-width: 645px
         display: flex
@@ -32,19 +33,22 @@
     &__title
         font-size: $size-xl
         font-weight: bold
-        margin-bottom: 25px
+        margin-bottom: 35px
     &__desc,&__title-list,&__list-item
         color: $white-collor
         font-size: $size-m
         font-weight: normal
         line-height: 23px
+    &__title-list
+        margin-bottom: 5px
     &__desc
-        margin-bottom: $size-m
+        margin-bottom: 23px
     &__list
         margin-bottom: 25px
     &__list-item
         position: relative
-        padding-left: 25px
+        padding-left: 30px
+        margin-bottom: 5px
         &::before
             content: ''
             position: absolute
@@ -54,7 +58,7 @@
             border-radius: 50%
             top: 50%
             transform: translateY(-50%)
-            left: 5px
+            left: 12px
     &::after
         content: ''
         position: absolute
@@ -74,3 +78,5 @@
             transform: translateY(-50%) rotate(180deg)
         &-prev
             left: 255px
+    .btn_red
+        text-transform: none

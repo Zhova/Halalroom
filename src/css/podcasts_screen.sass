@@ -6,7 +6,7 @@
         margin-bottom: 80px
     .slick
         &-slide
-            transform: scale(.9)
+            transform: scale(.84)
             transition: .6s
             .podcasts-slider
                 &__container
@@ -61,6 +61,7 @@
             line-height: 120%
             font-weight: bold
             max-width: 690px
+            text-transform: uppercase
         &__desc
             font-family: $font-roboto
             font-size: $size-s
@@ -72,9 +73,14 @@
             .btn
                 &_red
                     margin-right: 36px
+                    font-size: $size-s
+                    padding: 12px 40px
                 &_transp
                     color: #fff
                     border: 1px solid #fff
+                    font-size: $size-s
+                    padding: 12px 40px
+
     .slick
         &-arrow
             background: url('../img/podcasts-arow-active.svg')
@@ -86,7 +92,7 @@
             left: 350px
             transform: translateY(-50%) rotate(180deg)
         &-dots
-            bottom: -60px
+            bottom: -80px
             li
                 border: 2px solid #DBDBDD
             .slick-active
