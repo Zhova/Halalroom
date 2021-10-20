@@ -1,2 +1,46 @@
 mixin footer 
-    +b.FOOTER.footer
+    +b.FOOTER.footer-wrap.wrap
+        +b.footer.container
+            +e.IMG.logo(src="./img/logo-footer.png")
+            +e.top
+                +e.P.title Дізнавайтесь про останні новини!
+                +b.FORM.subscribe-form
+                    +e.INPUT(type="email" placeholder="Ваш E-mail").emeil
+                    +e.INPUT(type="submit").submit
+                    +e.agreement-block
+                        +e.INPUT(type="checkbox" name="agreement" id="agreement").checkbox
+                        +e.LABEL(for="agreement").agreement-label Я погоджуюсь на опрацювання моїх персональних даних
+            +e.del 
+            +e.bottom 
+                +e.NAV.nav 
+                    +e.UL.nav-list 
+                        +e.LI.nav-list-item
+                            a Культура
+                        +e.LI.nav-list-item
+                            a Кулінарія
+                        +e.LI.nav-list-item
+                            a Технології
+                        +e.LI.nav-list-item
+                            a Цікаво знати
+                        +e.LI.nav-list-item
+                            a Косметика
+                        +e.LI.nav-list-item
+                            a Мода
+                        +e.LI.nav-list-item
+                            a Подкасти
+                +b.social-block 
+                    +e.A(href="#").item
+                        +e.IMG(src="./img/facebook-icon.svg").img 
+                    +e.A(href="#").item
+                        +e.IMG(src="./img/tiktok-icon.svg").img 
+                    +e.A(href="#").item
+                        +e.IMG(src="./img/telegram-icon.svg").img 
+                    +e.A(href="#").item
+                        +e.IMG(src="./img/youtube-icon.svg").img 
+                    +e.A(href="#").item
+                        +e.IMG(src="./img/instagram-icon.svg").img
+                +e.copyright-block 
+                    +e.A(href="").policy Політика конфіденційності
+                    +e.A(href="").contract Угода користувача 
+                    +e.P.copyright © 2021 HalalRoom. Всі права захищені 
+                        
