@@ -21,6 +21,9 @@ const cssFiles = [
   "./src/css/lastNews_screen.sass",
   "./src/css/podcasts_screen.sass",
   "./src/css/category_screen.sass",
+  "./src/css/arhive_category-page.sass",
+  "./src/css/category-menu.sass",
+  "./src/css/catrgory-section.sass",
   "./src/css/footer.sass",
   "./src/css/media.sass",
 ];
