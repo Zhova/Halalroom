@@ -2,5 +2,21 @@
 
 .lastNews
     padding-top: 60px
+    position: relative
     .title
         margin-bottom: 80px
+    &-wrap
+        position: relative
+        &::after,&::before
+            content: ''
+            position: absolute
+            background: url('../img/star.svg')
+            background-size: cover
+            width: 400px
+            height: 400px
+        &::after
+            top: -220px
+            left: -250px
+        &::before
+            right: -220px
+            bottom: 100px

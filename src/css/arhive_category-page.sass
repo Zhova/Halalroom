@@ -2,3 +2,17 @@
     &_category
         &-page
             padding: 100px 0
+            position: relative
+            &::after,&::before
+                content: ''
+                position: absolute
+                background: url('../img/star.svg')
+                background-size: cover
+                width: 400px
+                height: 400px
+            &::after
+                top: 30%
+                left: -250px
+            &::before
+                right: -200px
+                bottom: 10%
