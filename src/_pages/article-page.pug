@@ -1,5 +1,7 @@
-include ../_screens/article-main_screen
+include ../_screens/article-main_screen.pug
+include ../_screens/article-body_screen.pug
 
 mixin article-page
     +b.article-page 
         +article-main_screen
+        +article-body_screen

@@ -26,6 +26,8 @@ const cssFiles = [
   "./src/css/category-menu.sass",
   "./src/css/catrgory-section.sass",
   "./src/css/article-main_screen.sass",
+  "./src/css/article-body_screen.sass",
+  "./src/css/sidebar-content.sass",
   "./src/css/footer.sass",
   "./src/css/media.sass",
 ];
