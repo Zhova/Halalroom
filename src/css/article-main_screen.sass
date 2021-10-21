@@ -1,0 +1,56 @@
+@import ./variables
+
+.article
+    &-main
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-wrap
+            padding: 190px 0
+            color: #fff
+        &__category,&__title
+            font-family: $font-montserrat
+            text-align: center
+        &__category
+            font-size: $size-s
+            font-weight: 600
+            line-height: 24px
+            margin-bottom: 62px
+        &__title
+            font-size: $size-xl
+            font-weight: bold
+            line-height: 59px
+            max-width: 1000px
+            margin: 0
+            margin-bottom: 61px
+        &__desc,&__date,&__time
+            font-family: $font-roboto
+        &__desc
+            font-size: $size-s
+            line-height: 145%
+            margin-bottom: 61px
+            max-width: 500px
+            text-align: center
+        &__date-block
+            display: flex
+        &__date,&__time
+            font-size: $size-xs
+            padding-left: 32px
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                width: 24px
+                height: 24px
+                left: 0
+                background-size: cover !important
+
+        &__date
+            margin-right: 32px
+            &::before
+                background: url('../img/calendar.svg')
+        &__time
+            &::before
+                background: url('../img/timer.svg')
