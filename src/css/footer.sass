@@ -4,13 +4,24 @@
     &-wrap
         background: linear-gradient(94.26deg, #1D0525 17.38%, #420059 70.74%), #121212
         min-height: 400px
-        padding-top: 90px
+        padding-top: 139px
         padding-bottom: 34px
-    &__logo
-        position: absolute
-        left: 50%
-        transform: translateX(-50%)
-        top: -65px
+        position: relative
+        overflow: hidden
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            width: 100%
+            background: url('../img/footer-logo.png')
+            background-position-x: center
+            height: 139px
+            top: -1px
+    // &__logo
+    //     position: absolute
+    //     left: 50%
+    //     transform: translateX(-50%)
+    //     top: -65px
     &__top
         position: relative
         z-index: 1
