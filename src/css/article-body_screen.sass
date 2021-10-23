@@ -2,23 +2,35 @@
 
 .article
     &-body
-        display: flex
-        justify-content: space-between
         &-wrap
             padding-top: 80px
             padding-bottom: 100px
-        &__text-block
-            margin-right: 30px
-            h3
-                font-family: $font-montserrat
-                color: $gray-collor
-                font-size: 30px
-                font-weight: 600
-                line-height: 100%
-                margin-bottom: 35px
-            p
-                font-family: $font-roboto
-                color: $gray-collor
-                font-size: $size-s
-                line-height: 145%
-                margin-bottom: 35px
+        &-shell
+            display: flex
+            justify-content: space-between
+        &-content
+            &__text-block
+                margin-right: 30px
+                margin-bottom: 100px
+                h3
+                    font-family: $font-montserrat
+                    color: $gray-collor
+                    font-size: 30px
+                    font-weight: 600
+                    line-height: 100%
+                    margin-bottom: 35px
+                p
+                    font-family: $font-roboto
+                    color: $gray-collor
+                    font-size: $size-s
+                    line-height: 145%
+                    margin-bottom: 35px
+            &__social
+                &-block
+                    display: flex
+                    margin-bottom: 86px
+                &-item
+                    margin-right: 30px
+        .news-list__item
+            max-width: 32.2%
+            margin-bottom: 80px

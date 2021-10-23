@@ -109,6 +109,19 @@ ul
 		text-align: left
 		text-transform: none
 		font-size: 48px
+	&_del
+		position: relative
+		overflow: hidden
+		margin-bottom: 74px
+		letter-spacing: 0.06em
+		&::after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 2px
+			background: #102B3E
+			bottom: 20%
+			transform: translateX(-5px)
 
 .origin
 	&-left

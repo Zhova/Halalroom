@@ -12,6 +12,14 @@
         &_default
             font-size: 30px
             font-family: $font-montserrat
+        &_del
+            text-align: center
+            font-size: 36px
+            font-weight: bold
+            letter-spacing: 0
+            margin-bottom: 50px
+            &::after
+                display: none
 
     .btn
         &_transp
@@ -24,6 +32,7 @@
             height: 12px
     .news-list
         justify-content: center
+        flex-direction: column
     .popular-menu
         max-width: none
     .header
@@ -126,6 +135,7 @@
         &__img
             margin-bottom: 0
             display: block
+            width: 100%
         &__note-block
             position: absolute
             top: 10px
@@ -257,5 +267,36 @@
     .single_category-page
         &::after,&::before
             display: none
+    .sidebar-content-way
+        display: none
+
+    .article
+        &-body
+            .news-list__item
+                max-width: 100%
+            &-content
+                &__text-block
+                    margin-right: 0
+                    h3
+                        font-size: 20px
+                        margin-bottom: 30px
+                    p
+                        margin-bottom: 30px
+                &__social-block
+                    display: none
+            &-wrap
+                padding-top: 30px
+        &-main
+            &__title
+                font-size: 22px
+                line-height: 140.5%
+            &__desc
+                font-size: 16px
+                line-height: 145%
+                margin-bottom: 120px
+            &-wrap
+                padding: 150px 0
+                padding-bottom: 40px
+
 // =============== mobile
 // @media screen and (max-width: 767px)
