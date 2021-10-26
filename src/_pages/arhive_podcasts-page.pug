@@ -1,0 +1,13 @@
+include ../_screens/podcasts-list_screen.pug
+include ../_screens/podcasts_screen.pug
+
+mixin arhive_podcasts-page
+    +b.arhive-podcasts
+        +b.H2.title_default відео та подкасти
+        +podcasts-list_screen
+        +podcasts_screen
+        +podcasts-list_screen
+        +b.A.btn_default._transp._center(href="#") Завантажити ще
+
+
+      

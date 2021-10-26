@@ -4,7 +4,7 @@ $(document).ready(function () {
     slideToScroll: 1,
     dots: true,
   });
-  $(".podcasts-slider ").slick({
+  $(".general-page .podcasts-slider").slick({
     centerMode: true,
     centerPadding: "375px",
     slidesToShow: 1,
@@ -21,6 +21,21 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".arhive-podcasts .podcasts-slider").slick({
+    slidesToShow: 1,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   function layoutOfSlides() {
     $(".podcasts .slick-slide").removeClass("origin-left");
     $(".podcasts .slick-slide").removeClass("origin-right");

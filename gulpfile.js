@@ -28,6 +28,8 @@ const cssFiles = [
   "./src/css/article-main_screen.sass",
   "./src/css/article-body_screen.sass",
   "./src/css/sidebar-content.sass",
+  "./src/css/arhive_podcasts-page.sass",
+  "./src/css/podcasts-list_screen.sass",
   "./src/css/footer.sass",
   "./src/css/media.sass",
 ];

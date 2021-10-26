@@ -1,0 +1,108 @@
+
+@import ./variables
+
+.podcasts-list
+    &__item
+        &-title
+            font-family: $font-montserrat
+            color: $black-collor
+            font-weight: bold
+            font-size: 30px
+            line-height: 37px
+            margin-bottom: 53px
+        &-desc
+            font-family: $font-roboto
+            font-size: $size-s
+            font-weight: normal
+            line-height: 145%
+            color: #576B79
+            margin-bottom: 39px
+        &-date
+            font-family: $font-roboto
+            color: $lightGray-collor
+            font-weight: normal
+            font-size: 16px
+            line-height: 20px
+            position: relative
+            padding-left: 28px
+            &::after
+                content: ''
+                position: absolute
+                width: 20px
+                height: 20px
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                background: url(../img/calendar.svg)
+                background-size: cover
+
+    &-wrap
+        &:nth-child(2)
+            .podcasts-list
+                &__item
+                    display: flex
+                    margin-bottom: 150px
+                    min-height: 370px
+                    &-img
+                        max-width: 50%
+                        border-radius: 10px
+                        position: relative
+                    &-text-block
+                        padding: 85px 90px 30px
+                        background: #FAFAFA
+                        border-radius: 80px 0px 0px 0px
+                        box-shadow: 0px 0px 70px 4px rgba(52, 52, 52, 0.15)
+                        position: relative
+                        top: -30px
+                    &:nth-child(even)
+                        flex-direction: row-reverse
+                        .podcasts-list
+                            &__item
+                                &-img
+                                    left: -21px
+                                &-text-block
+                                    border-radius: 0px 80px 0px 0px
+                                    position: relative
+                                    right: -21px
+                    &:nth-child(odd)
+                        .podcasts-list
+                            &__item
+                                &-img
+                                    right: -21px
+                                &-text-block
+                                    left: -21px
+        &:nth-child(4)
+
+            .podcasts-list
+                &__item
+                    display: flex
+                    margin-bottom: 150px
+                    min-height: 370px
+                    &-img
+                        max-width: 50%
+                        border-radius: 10px
+                        position: relative
+                    &-text-block
+                        padding: 85px 90px 30px
+                        background: #FAFAFA
+                        border-radius: 80px 0px 0px 0px
+                        box-shadow: 0px 0px 70px 4px rgba(52, 52, 52, 0.15)
+                        position: relative
+                        top: -30px
+                    &:nth-child(odd)
+                        flex-direction: row-reverse
+                        .podcasts-list
+                            &__item
+                                &-img
+                                    left: -21px
+                                &-text-block
+                                    border-radius: 0px 80px 0px 0px
+                                    position: relative
+                                    right: -21px
+                    &:nth-child(even)
+                        .podcasts-list
+                            &__item
+                                &-img
+                                    right: -21px
+                                &-text-block
+                                    left: -21px
