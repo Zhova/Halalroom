@@ -30,6 +30,8 @@ const cssFiles = [
   "./src/css/sidebar-content.sass",
   "./src/css/arhive_podcasts-page.sass",
   "./src/css/podcasts-list_screen.sass",
+  "./src/css/single-podcasts-first_screen.sass",
+  "./src/css/single-podcasts-page.sass",
   "./src/css/footer.sass",
   "./src/css/media.sass",
 ];
