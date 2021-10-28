@@ -367,8 +367,12 @@
             margin-bottom: 40px
         .subscribe-form
             width: 100%
-            input[type=submit]
-                width: 100%
+            input
+                &[type=submit]
+                    width: 100%
+                &[type=email]
+                    border: 1px solid #8802AF
+                    background: transparent
 
     .single
         &-podcasts
@@ -381,6 +385,36 @@
                 &__video
                     height: 220px
                     bottom: 0
+
+    .our-contacts
+        margin-bottom: 45px
+        &__list
+            &-item
+                flex-direction: column
+        &__sub-title
+            margin-bottom: 55px
+        &__list
+            &-item
+                margin-bottom: 30px
+            &-title
+                margin-bottom: 16px
+
+    .contacts
+        &-page
+            padding-top: 64px
+        &-first
+            flex-direction: column
+            margin-bottom: 0
+            .social-block
+                display: flex
+                justify-content: space-between
+        &-join
+            .title
+                display: none
+            .subscribe-block
+                background: transparent
+                padding: 0
+                padding-top: 90px
 
 // =============== mobile
 // @media screen and (max-width: 767px)

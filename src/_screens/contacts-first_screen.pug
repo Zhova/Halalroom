@@ -1,0 +1,38 @@
+mixin contacts-first_screen 
+    +b.contacts-first-wrap.wrap
+        +b.contacts-first.container 
+            +b.our-contacts
+                +b.H2.title_default._left Контакты
+                +e.P.sub-title We want to make friends with our clients, so we are happy to answer your questions.
+                +e.list
+                    +e.list-item
+                        +e.P.list-title Телефон:
+                        +e.A(href="#").list-info +380-63-1535765  
+                    +e.list-item
+                        +e.P.list-title Email:
+                        +e.A(href="#").list-info hello@halalroom.com
+                    +e.list-item
+                        +e.P.list-title Телефон:
+                        +e.A(href="#").list-info Глибочицька 40, Е/Ф, Офис 501 ТОВ ”Algorithm Global Innovation”
+                    +e.list-item
+                        +e.P.list-title Ми в соц.мережах:
+                        +b.social-block 
+                            +e.A(href="#").item
+                                +e.IMG(src="./img/facebook-icon.svg").img 
+                            +e.A(href="#").item
+                                +e.IMG(src="./img/tiktok-icon.svg").img 
+                            +e.A(href="#").item
+                                +e.IMG(src="./img/telegram-icon.svg").img 
+                            +e.A(href="#").item
+                                +e.IMG(src="./img/youtube-icon.svg").img 
+                            +e.A(href="#").item
+                                +e.IMG(src="./img/instagram-icon.svg").img
+            +b.contacts-form-wrap
+                +e.IMG.logo(src="./img/contacts-logo.png")
+                +b.FORM.contacts-form
+                    +e.P.title Звяжіться з нами
+                    +e.INPUT(type="text" placeholder="Ваше імя").input
+                    +e.INPUT(type="tel" placeholder="Телефон").input
+                    +e.INPUT(type="email" placeholder="E-mail*").input
+                    +e.TEXTAREA(placeholder="Ваше повідомлення").textarea
+                    +e.INPUT(type="submit").submit

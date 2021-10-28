@@ -1,0 +1,10 @@
+mixin contacts-join_screen 
+    +b.contacts-join-wrap.wrap
+        +b.contacts-join.container
+            +b.H2.title_default._left._del Приєднуйтесь
+            +b.subscribe-block 
+                    +e.P.title Хочу потрапити на подкаст
+                    +e.P.desc У вас є цікава історія і вам є що розповісти? Ми чекаємо на вас! Залиште свої контактні дані і ми з Вами звяжемось найближчим часом!
+                    +b.FORM.subscribe-form
+                        +e.INPUT(type="email" placeholder="Ваш E-mail").emeil
+                        +e.INPUT(type="submit" value="Підписатися").submit
