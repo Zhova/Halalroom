@@ -1,6 +1,10 @@
 "use strict";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 $(document).ready(function () {
+  var _settings;
+
   $(".main-slider").slick({
     slideToShow: 1,
     slideToScroll: 1,
@@ -12,6 +16,11 @@ $(document).ready(function () {
     slidesToShow: 1,
     dots: true,
     responsive: [{
+      breakpoint: 1750,
+      settings: (_settings = {
+        centerPadding: "0"
+      }, _defineProperty(_settings, "centerPadding", "150px"), _defineProperty(_settings, "slidesToShow", 1), _settings)
+    }, {
       breakpoint: 1024,
       settings: {
         centerPadding: "0",

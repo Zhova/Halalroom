@@ -23,6 +23,17 @@
         justify-content: space-between
         align-items: flex-start
         margin-bottom: 200px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            // background: url('../img/contacts-stars.svg')
+            background-size: cover
+            width: 617px
+            height: 617px
 
 .our
     &-contacts

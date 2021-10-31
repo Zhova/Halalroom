@@ -11,6 +11,14 @@ $(document).ready(function () {
     dots: true,
     responsive: [
       {
+        breakpoint: 1750,
+        settings: {
+          centerPadding: "0",
+          centerPadding: "150px",
+          slidesToShow: 1,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           centerPadding: "0",
